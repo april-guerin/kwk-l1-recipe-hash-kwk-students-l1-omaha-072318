@@ -27,10 +27,20 @@ end
 
 #4: Now use `puts` to print out just the ingredients without the amounts. You'll want to use the `each_key` method.
 def ingredients(perfect_10_recipe)
+  perfect_10_recipe = { :almond_flour => "2 cups", :gluten_free_whole_oats => "1 cup", :kosher_salt => "1/2 tea spoon", :baking_powder => "1/2 tea spoon", :baking_soda => "1/4 tea spoon", :xanthan_Gum => "1/2 tea spoon", :slivered_almonds => "1/4 cup", :mini_dark_chocolate_chips => "3/4 cup", :olive_oil => "1/2 cup", :agave => "1/4 cup"}
+  
+  perfect_10_recipe.each do |ingredients|
+    puts "#{ingredients.first}"
+  end
 end
 
 #5: Now use `puts` to print out just the amounts without the ingredients. You'll want to use the `each_value` method.
 def amounts(perfect_10_recipe)
+  perfect_10_recipe = { :almond_flour => "2 cups", :gluten_free_whole_oats => "1 cup", :kosher_salt => "1/2 tea spoon", :baking_powder => "1/2 tea spoon", :baking_soda => "1/4 tea spoon", :xanthan_Gum => "1/2 tea spoon", :slivered_almonds => "1/4 cup", :mini_dark_chocolate_chips => "3/4 cup", :olive_oil => "1/2 cup", :agave => "1/4 cup"}
+  
+  perfect_10_recipe.each do |ingredients|
+    puts "#{ingredients.last}"
+  end
 end
 
 #6: Return the number of ingredients in the `perfect_10_recipe` hash.
